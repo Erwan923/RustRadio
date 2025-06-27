@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="src/logo.png" alt="RustRadio Logo" width="280"/>
+  <img src="/logo.png" alt="RustRadio Logo" width="280"/>
   
   # 📡 RustRadio
   
