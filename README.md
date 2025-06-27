@@ -1,9 +1,8 @@
 <div align="center">
   <img src="/logo.png" alt="RustRadio Logo" width="280"/>
   
-  # 📡 RustRadio
   
-  ### *Web Interface for Rust-based SDR Containers*
+  ### *Rust-based SDR Containers Plateforme*
   
   <p align="center">
     <em>Manage your SDR workloads with Rust containers</em><br>
