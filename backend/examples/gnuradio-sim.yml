@@ -1,0 +1,14 @@
+name: gnuradio-sim
+image: gnuradio/gnuradio:latest
+command:
+  - "bash"
+  - "-lc"
+  - |
+    grcc /app/flowgraph.grc -d /app;
+    python3 /app/flowgraph.py --input /data/test.iq;
+ports: []
+volumes:
+  - "./data:/data"
+  - "./flowgraph:/app"
+environment: {}
+restart_policy: "Never"

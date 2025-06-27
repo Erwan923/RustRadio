@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rustradio-frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - rustradio-net
+
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    container_name: rustradio-backend
+    ports:
+      - "8080:8080"
+    networks:
+      - rustradio-net
+
+networks:
+  rustradio-net:
+    driver: bridge

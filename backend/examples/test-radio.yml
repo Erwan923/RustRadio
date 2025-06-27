@@ -1,0 +1,14 @@
+name: "test-radio"
+image: "simulated"
+command:
+  - "sh"
+  - "-c"
+  - |
+    echo "[SIMULATION] Génération de spectre factice...";
+    sleep 1;
+    echo "Fréquence: 2.4GHz - Puissance: -30dBm";
+    echo "[SIMULATION] Terminé.";
+ports: []  # pas de ports pour simulation
+volumes: []
+environment: {}
+restart_policy: "Always"
